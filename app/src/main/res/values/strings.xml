@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BatteryChanger</string>
+    <string name="title_home">Change Percent</string>
+    <string name="title_dashboard">Battery Info</string>
+    <string name="title_notifications">Donate</string>
+
+    <string name="_100">100% voltage</string>
+    <string name="_0">0% voltage</string>
+    <string name="apply">Apply</string>
+
+    <string name="get_info">Get info</string>
+    <string name="btn_pressed">btn pressed</string>
+    <string name="created_by_pthon_vk_com_pthon">Created by pthon | vk.com/pthon</string>
+    <string name="manual_percent">Manual percent</string>
+    <string name="set">Set</string>
+    <string name="here_u_can_donate_me">Here u can donate me :)</string>
+    <string name="qiwi_com_n_pthon"><a href="https://qiwi.com/n/PTHON/">qiwi.com/n/PTHON</a></string>
+    <string name="stop_auto_update">Stop auto update</string>
+    <string name="reset">Reset</string>
+</resources>
