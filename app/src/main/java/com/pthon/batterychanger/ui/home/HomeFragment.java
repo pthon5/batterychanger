@@ -52,6 +52,18 @@ public class HomeFragment extends Fragment {
             maxmv.setText(resArray[2]);
         } catch (ArrayIndexOutOfBoundsException e) {}
 
+        btnreset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Runtime.getRuntime().exec("su");
+                    Runtime.getRuntime().exec("su -c dumpsys battery reset");
+                    Toast.makeText(getContext(), "Success reset", Toast.LENGTH_SHORT).show();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         btnapply.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +77,7 @@ public class HomeFragment extends Fragment {
                 Integer min = Integer.parseInt(minmv.getText().toString());
                 Integer max = Integer.parseInt(maxmv.getText().toString());
                 DBworker.put(root.getContext(), "start",String.valueOf(min), String.valueOf(max));
-                Toast.makeText(getContext(), "Success! Wait 30 sec.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Success! Wait 2 sec.", Toast.LENGTH_SHORT).show();
 
                 try {
                     getActivity().stopService(new Intent(getActivity(), checkservice.class));

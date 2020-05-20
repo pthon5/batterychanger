@@ -17,4 +17,6 @@
     <string name="qiwi_com_n_pthon"><a href="https://qiwi.com/n/PTHON/">qiwi.com/n/PTHON</a></string>
     <string name="stop_auto_update">Stop auto update</string>
     <string name="reset">Reset</string>
+    <string name="start_adb_over_tcp">Start adb over TCP</string>
+    <string name="stop_adb_over_tcp">Stop adb over TCP</string>
 </resources>
